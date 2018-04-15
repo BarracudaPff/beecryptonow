@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="text/javascript" src="common/jquery.min.js"></script>
+    <script type="text/javascript" src="common/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Scripts/config.js"></script>
+    <script data-main="RealTimeStockChart" src="Scripts/require.js"></script>
+</head>
+<body>
+<div class="header">
+    <a class="header-logo" href="#"></a>
+    <div class="header-bar-ex eblue">
+        <div class="header-bar">
+            <div class="nav-left">
+                <div class="course-box">
+                    <div class="course">Курс 1/58.0046404 Длр - Руб</div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="balance" align="right">
+                    <span class="balance-title">Баланс крипто-валюты</span>
+                    <div class="total-balance">
+                        <div class="balance-total-amount">
+                            <span class="balance-money">1 123</span>
+                        </div>
+                        <div class="balance-item">
+                            <i class="fa fa-btc"></i>
+                        </div>
+                        <div class="balance-eye">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="19" class="ll">
+                                <path d="M15.448 4.19c2.196 1.53 3.62 3.388 3.72 3.52l.29.386-.29.388c-.17.23-4.247 5.602-9.438 5.602-1.217 0-2.372-.295-3.43-.75l.996-.995c.773.284 1.59.458 2.434.458 3.8 0 7.086-3.507 8.09-4.696-.54-.63-1.732-1.917-3.306-2.977l.934-.934zm-1.126-.71c-1.35-.76-2.914-1.318-4.592-1.318-5.19 0-9.267 5.32-9.438 5.548L0 8.096l.29.388c.115.154 1.994 2.63 4.79 4.24l.952-.954C3.925 10.638 2.295 8.875 1.638 8.1 2.645 6.92 5.93 3.452 9.73 3.452c1.294 0 2.53.404 3.636.984l.956-.956zM7.51 10.293a3.085 3.085 0 0 1-.886-2.17A3.109 3.109 0 0 1 9.73 5.018c.843 0 1.61.338 2.17.885l-4.39 4.39zm1.104.73a3.11 3.11 0 0 0 4.014-4.015l-4.014 4.015z"></path>
+                                <path d="M15.98.016l.918.917L2.03 15.8l-.916-.917"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="balance" align="right">
+                    <span class="balance-title">Баланс крипто-валюты</span>
+                    <div class="total-balance">
+                        <div class="balance-total-amount">
+                            <span class="balance-money">107 533</span>
+                        </div>
+                        <div class="balance-item li">
+                            <i class="fa fa-rub"></i>
+                        </div>
+                        <div class="balance-eye">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="19" class="ll">
+                                <path d="M15.448 4.19c2.196 1.53 3.62 3.388 3.72 3.52l.29.386-.29.388c-.17.23-4.247 5.602-9.438 5.602-1.217 0-2.372-.295-3.43-.75l.996-.995c.773.284 1.59.458 2.434.458 3.8 0 7.086-3.507 8.09-4.696-.54-.63-1.732-1.917-3.306-2.977l.934-.934zm-1.126-.71c-1.35-.76-2.914-1.318-4.592-1.318-5.19 0-9.267 5.32-9.438 5.548L0 8.096l.29.388c.115.154 1.994 2.63 4.79 4.24l.952-.954C3.925 10.638 2.295 8.875 1.638 8.1 2.645 6.92 5.93 3.452 9.73 3.452c1.294 0 2.53.404 3.636.984l.956-.956zM7.51 10.293a3.085 3.085 0 0 1-.886-2.17A3.109 3.109 0 0 1 9.73 5.018c.843 0 1.61.338 2.17.885l-4.39 4.39zm1.104.73a3.11 3.11 0 0 0 4.014-4.015l-4.014 4.015z"></path>
+                                <path d="M15.98.016l.918.917L2.03 15.8l-.916-.917"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bar-ex cyan">
+        <div class="header-actions">
+            <a class="action-item" href="#">
+                <span>Пополнить кошелек</span></a>
+            <a class="action-item">
+                <i class="fa fa-btc fa-ex"></i>
+                <span class="action-item-pad">курс</span>
+            </a>
+            <a class="action-item" href="#">Вывести</a>
+            <a class="action-item" href="#">Обменять</a>
+            <a class="action-item" href="#">Личный кабинет</a>
+        </div>
+    </div>
+
+</div>
+<div class="layout-body red">
+    <div class="body-capture">Динамика курса Bitcoin на графике</div>
+    <div class="quest">
+        <p class="real-graph">Я так и не понял что это такое))</p>
+        <p class="arrow">-></p>
+        <img class="img-quest" src="static/img/quest.jpg" alt="Error">
+    </div>
+    <div class="layout-graph">
+        <div class="graph">
+            <div class="real-graph">
+                <canvas width="800px" height="600px" id="stockChart"></canvas>
+            </div>
+            <div class="Div" id="myDiv">
+                <div class="table">
+                    <div class="layout-label">
+                        <div class="label" style="text-align: right">Текущая цена</div>
+                        <div class="price" style="text-align: right">534.160</div>
+                    </div>
+                    <div class="layout-price">
+                        <div class="label">За сутки</div>
+                        <div class="price" style="  border-left: 1px solid rgba(0, 0, 0, .2);">0.71%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="graph-data"></div>
+    </div>
+    <div class="value-explain">
+        <strong>Bitcoin </strong> (от англ. bit - единица информации "бит" и сoin - монета) - децентрализованная платежная система для осуществления операций с одноименной денежной единицей, также называемой виртуальной валютой или криптовалютой. Концепция системы была опубликована в ноябре 2008 г. в интернете ее автором (возможно, коллективом авторов) под псевдонимом Сатоси Накамото (Satoshi Nakamoto). В настоящее время одним из основных программистов, отвечающих за работу системы, является американец Гэйвин Андерсен. В мае 2016 г. австралиец Крейг Райт заявил, что именно он был создателем системы, однако весомых доказательств этого так и не предъявил.
+
+        Подробнее на ТАСС:
+        http://tass.ru/info/4456388
+    </div>
+</div>
+</body>
+</html>

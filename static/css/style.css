@@ -1,0 +1,286 @@
+:root {
+    border-color: #CCC;
+    background-color: #F5F5F5;
+}
+body {
+    position: relative;
+    overflow-y: scroll;
+    font: 14px/1.2 sans-serif;
+    margin: 0;
+    color: #333;
+    text-size-adjust: none
+}
+
+i {
+    text-align: center;
+}
+span {
+    cursor: pointer;
+}
+
+/*header*/
+
+.header {
+    height: 96px;
+    /*padding-left: 96px;*/
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 96px;
+    background: url('../../static/img/logo.png') center no-repeat;
+}
+
+/*header-bar*/
+
+.header-bar {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.course-box {
+    display: flex;
+    height: 48px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 22px;
+    align-items: center;
+}
+
+.course {
+    color: #000000;
+    border: 2px solid #610F08;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(
+            -55deg,
+            #FFE785,
+            #FFE785 10px,
+            #fff 10px,
+            #fff 20px
+    );
+}
+
+.balance {
+    color: #000000;
+    display: flex;
+    height: 48px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 22px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.balance-total-amount {
+    display: flex;
+}
+
+.balance-eye {
+    padding-top: 2px;
+}
+
+/*-----change*/
+.balance-money {
+    padding-top: 1px;
+    min-width: 80px;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+    word-spacing: 0;
+    cursor: default;
+}
+
+.balance-item {
+    margin: auto 0;
+    padding: 0 9px;
+}
+
+.balance-total {
+    display: flex;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.balance-title {
+    font-weight: 500;
+    font: 13px Roboto, sans-serif;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.total-balance {
+    color: #000;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 130px;
+    height: 29px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #FFF;
+    font: 16px Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.total-balance:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -23px;
+    border: 15px solid transparent;
+    border-right-width: 9px;
+    border-right-color: #FFF;
+    border-radius: 3px;
+}
+
+/*----change*/
+
+.li {
+    margin-top: 6px;
+}
+
+.fa-ex {
+    font-size: 2em;
+}
+
+.action-item-pad {
+    margin-left: 10px;
+}
+
+.action-item {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+
+    font: 13px Roboto, sans-serif;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #030303;
+    display: flex;
+    position: relative;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 48px;
+    transition: background .2s;
+    outline: 0;
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bar-ex {
+    padding-left: 96px;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+/*body*/
+
+.layout-body {
+    margin: 96px;
+    margin-top: 40px;
+}
+
+.body-capture {
+    margin: 20px;
+    margin-left: 200px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.quest {
+    display: flex;
+}
+
+.arrow {
+    margin: auto 20px;
+    font-weight: 800;
+}
+
+.img-quest {
+    padding-left: 20px;
+}
+
+.graph {
+    display: flex;
+}
+
+.real-graph {
+    margin-left: 100px;
+}
+
+.Div {
+    margin: auto;
+}
+
+.table {
+    display: flex;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.layout-label {
+    display: block;
+    padding: 10px;
+}
+
+.layout-price {
+    display: block;
+    padding: 10px;
+}
+
+.label {
+    padding: 10px;
+}
+
+.price {
+    padding: 10px;
+}
+
+.value-explain {
+    padding: 50px 200px;
+}
+
+/*
+additional
+ */
+
+.red {
+}
+
+.blue {
+    background-color: #FF9887;
+}
+
+.cyan {
+    background-color: #DE835D;
+}
+
+.eblue {
+    background-color: #FF9B4C;
+}

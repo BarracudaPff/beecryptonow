@@ -1,0 +1,145 @@
+body {
+    position: relative;
+    overflow-y: scroll;
+    margin: 0;
+    font: 14px/1.2 sans-serif;
+    color: #333;
+    text-size-adjust: none
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "header" "nav" "content" "footer";
+}
+
+.layout-header {
+    grid-area: header;
+    height: 96px;
+}
+
+.header-bar {
+    display: flex;
+    height: 50%;
+}
+
+.header-action {
+    display: flex;
+    height: 50%;
+}
+
+.header-bar-content {
+    display: flex;
+    margin-left: 96px;
+    text-align: center;
+    text-size-adjust: none;
+    height: 100%;
+}
+
+.header-action {
+    margin-left: 96px;
+    height: 100%;
+}
+
+.layout-body {
+    grid-area: content;
+    margin: 50px 50px 50px 50px;
+}
+
+.total-balance {
+    margin: auto 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 185px;
+    height: 29px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #FFF;
+    font: 16px Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.total-balance:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -23px;
+    border: 15px solid transparent;
+    border-right-width: 9px;
+    border-right-color: #FFF;
+    border-radius: 3px;
+}
+
+.img-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 96px;
+    background: url('../../static/img/logo.png') center no-repeat;
+}
+
+.header-bar-right {
+    position: absolute;
+    margin: 10px 22px;
+    right: 0;
+}
+
+.course {
+    color: #ffffff;
+    margin: 0 10px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background: repeating-linear-gradient(
+            -55deg,
+            #222,
+            #222 10px,
+            #333 10px,
+            #333 20px
+    );
+}
+
+.total-balance-eye {
+    padding: 10px;
+}
+
+.t-balance-crypto {
+    padding: 0 12px;
+    display: flex;
+}
+
+.total-balance-currency {
+    padding-left: 5px;
+}
+
+.eye {
+    content: '';
+    width: 15%;
+    padding: 0 7px;
+}
+
+.total-balance-amount {
+    font-weight:bold;
+    border-right: 2px solid orange;
+}
+
+.red {
+    background-color: plum;
+}
+
+.blue {
+    background-color: #4B5F8A;
+}
+
+.cyan {
+    background-color: chartreuse;
+}
+
+.eblue {
+    background-color: chartreuse;
+}
