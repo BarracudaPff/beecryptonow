@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML, CSS and JavaScript demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <link rel="stylesheet" href="static/css/style2.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.color.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+<body>
+<div class="layout-header">
+    <div class="layout-header-content">
+        <img src="static/img/dobro.png" alt="error" class="logo"/>
+        <div class="header-actions">
+            <form id="searchForm" class="layout-search">
+                <fieldset>
+                    <div class="input" style="width: 120px; background-color: rgb(232, 237, 241); padding-right: 15px;">
+                        <input type="text" name="s" id="s" value="     Search" style="color: rgb(180, 189, 196);"
+                               title="Сов">
+                    </div>
+                    <input type="submit" id="searchSubmit" value="" style="display: none;">
+                </fieldset>
+            </form>
+            <span class="header-item">О проекте</span>
+            <span class="header-item">Помощь</span>
+        </div>
+    </div>
+
+</div>
+<div class="layout-body">
+    <div class="context">
+        <div class="c-label">
+            <h1>Здусь нужны волонтеры:</h1>
+        </div>
+        <div class="c-sort">
+            <select title="fst" style="width:150px; margin-right: 5px;">
+                <option>По умолчанию</option>
+                <option>Совсем не по умолчанию</option>
+                <option>Ну я хз</option>
+                <option>;)</option>
+            </select>
+            <select title="scnd" style="width:150px;">
+                <option>Без обучения</option>
+                <option>С обучением</option>
+                <option>Обучает сам</option>
+                <option>Разучился</option>
+                <option>;)</option>
+            </select>
+        </div>
+        <div class="c-data">
+            <ol>
+                <li>
+                    <div class="event">
+                        <div class="layout-date">
+                            <div class="layout-date-ex">
+                                <div class="e-layout-date">
+                                    <i class="fa fa-calendar i"></i>
+                                    <body class="e-b">11 марта</body>
+                                </div>
+                                <div class="e-layout-time">
+                                    <i class="fa fa-clock-o i"></i>
+                                    <body class="e-b">10:30-17:30</body>
+                                </div>
+                            </div>
+                            <i class="fa fa-heart heart align-right"></i>
+                        </div>
+                        <p class="e-title">Чемпионат СПбГУ по программированию</p>
+                        <p class="e-place">Студенческий совет Института химии СПбГУ</p>
+                        <p class="e-data">Внимание!<br>
+                            Требуется помощь волонтеров на L Чемпионате СПбГУ по программированию<br>
+                            Дата: 11 марта 2018 года<br>
+                            Время занятости: 10:30 - 17:30<br>
+                            Адрес: Петергоф, Университетский пр., 28<br>
+                            Обязанности: смотреть за порядком во время проведения мероприятия</p>
+                        <button class="register e-go">Перейти к записи</button>
+                        <p class="e-date-publish">Сегодня 10:31</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="event">
+                        <div class="layout-date">
+                            <div class="layout-date-ex">
+                                <div class="e-layout-date">
+                                    <i class="fa fa-calendar i"></i>
+                                    <body class="e-b">11 марта</body>
+                                </div>
+                                <div class="e-layout-time">
+                                    <i class="fa fa-clock-o i"></i>
+                                    <body class="e-b">10:30-17:30</body>
+                                </div>
+                            </div>
+                            <i class="fa fa-heart heart align-right"></i>
+                        </div>
+                        <p class="e-title">Чемпионат СПбГУ по программированию</p>
+                        <p class="e-place">Студенческий совет Института химии СПбГУ</p>
+                        <p class="e-data">Внимание!<br>
+                            Требуется помощь волонтеров на L Чемпионате СПбГУ по программированию<br>
+                            Дата: 11 марта 2018 года<br>
+                            Время занятости: 10:30 - 17:30<br>
+                            Адрес: Петергоф, Университетский пр., 28<br>
+                            Обязанности: смотреть за порядком во время проведения мероприятия</p>
+                        <button class="register e-go">Перейти к записи</button>
+                        <p class="e-date-publish">Сегодня 10:31</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="event">
+                        <div class="layout-date">
+                            <div class="layout-date-ex">
+                                <div class="e-layout-date">
+                                    <i class="fa fa-calendar i"></i>
+                                    <body class="e-b">11 марта</body>
+                                </div>
+                                <div class="e-layout-time">
+                                    <i class="fa fa-clock-o i"></i>
+                                    <body class="e-b">10:30-17:30</body>
+                                </div>
+                            </div>
+                            <i class="fa fa-heart heart align-right"></i>
+                        </div>
+                        <p class="e-title">Чемпионат СПбГУ по программированию</p>
+                        <p class="e-place">Студенческий совет Института химии СПбГУ</p>
+                        <p class="e-data">Внимание!<br>
+                            Требуется помощь волонтеров на L Чемпионате СПбГУ по программированию<br>
+                            Дата: 11 марта 2018 года<br>
+                            Время занятости: 10:30 - 17:30<br>
+                            Адрес: Петергоф, Университетский пр., 28<br>
+                            Обязанности: смотреть за порядком во время проведения мероприятия</p>
+                        <button class="register e-go">Перейти к записи</button>
+                        <p class="e-date-publish">Сегодня 10:31</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="layout-login">
+        <div class="layout-l-buttons">
+            <a href="#" class="in">Войти</a>
+            <button class="register">Регистрация</button>
+        </div>
+        <input id="emailAddress" type="email" value="Email или телефон">
+        <input id="userPassword" type="password" value="Пароль">
+        <div class="dd"></div>
+        <label class="с"><input id="rememberme" name="rememberme" value="remember" type="checkbox"/>
+            &nbsp;Запомнить</label>
+        <div class="dd"></div>
+        <button class="login">Войти</button>
+
+    </div>
+</div>
+</body>
+</html>
